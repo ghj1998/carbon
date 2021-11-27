@@ -12,7 +12,7 @@ config = dict(
         experient_name='runs',
         n_threads=4,  # 并行进程数
         seed=1,
-        training_from_scratch=False,
+        training_from_scratch=True,
     ),
     runner=dict(  # 训练配置项
         episodes=1000,
@@ -40,7 +40,7 @@ config = dict(
         gae_lambda=0.95,
 
         # self-play parameters
-        selfplay=False,
+        selfplay=True,
     ),
 )
 config = EasyDict(config)
